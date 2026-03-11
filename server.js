@@ -236,7 +236,7 @@ app.patch('/api/transactions/settle/:userId/:friendId', (req, res) => {
 app.use(express.static(join(__dirname, 'dist')));
 
 // Send all other requests to the React app router
-app.get('*', (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(join(__dirname, 'dist', 'index.html'));
 });
 
