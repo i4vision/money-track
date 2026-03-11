@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  moneytrack:
+    build: .
+    container_name: moneytrack_app
+    ports:
+      - "8080:3001"
+    volumes:
+      - moneytrack_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  moneytrack_data:
