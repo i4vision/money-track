@@ -5,7 +5,7 @@ services:
     build: .
     container_name: moneytrack_app
     ports:
-      - "8080:3001"
+      - "28374:3001"
     volumes:
       - moneytrack_data:/app/data
     restart: unless-stopped

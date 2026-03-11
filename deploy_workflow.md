@@ -44,4 +44,4 @@ This will build the image, start the container, and mount a volume so your `data
 
 ## 4. Accessing the Application
 Once the container is running, the app will be available at:
-`http://localhost:8080`
+`http://localhost:28374`
